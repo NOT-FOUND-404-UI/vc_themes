@@ -1,0 +1,55 @@
+//META{"name":"ClearVision Mod","description":"Zerthox氏によるClearVision Amberテーマを日本語環境用にカスタマイズ、軽量化したテーマです。","author":"rexent_gx","version":"5.1.1"}*//{}
+
+/* IMPORT CSS FROM GITHUB */
+@import url(https://raw.githubusercontent.com/ClearVision/ClearVision-v6/master/ClearVision_v6.theme.css);
+/*
+---------------------------------------------------------------------------------------------------------------------------------------------
+IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
+---------------------------------------------------------------------------------------------------------------------------------------------
+*/
+/*============== CUSTOMIZABLE COLORS ===============*/
+/*
+backgrownd imager
+1:https://www.dropbox.com/s/efqxdfh5vtbzppv/yukari01_02.jpg?dl=1
+2:https://www.dropbox.com/s/g36mk9qsrkt6yr7/AIdrowedScenery01.png?dl=1
+3:https://www.dropbox.com/s/qvrmb8b40cizrws/IMG_2183.jpg?dl=1
+*/
+/*
+	--main-color: #e67a27;
+	--hover-color: #b35d1e;
+*/
+:root {
+    --background-blur: 0px;
+    --background-brightness: 150%;
+	--url1: url(http://localhost/image/touhou/yukari01.jpg);
+	--url2: url(http://localhost:80/wallpaper/AIdrowedScenery01.png);
+	--url3: url(http://localhost:80/wallpaper/IMG_2183.jpg);
+    --background-image: var(--url1);
+}
+/*========= CUSTOMIZABLE BACKGROUND IMAGE ==========*/
+body::after,
+.callout-backdrop,
+.userPopout-4pfA0d::before,
+.root-2sNHUF::before,
+#pubs-container::before,
+.auth-background,
+.auth-tiling-bg,
+.invite-modal .invite-splash,
+.radio-theme.light label,
+.radio-theme.dark label {
+    --background-image: var(--url3);
+}
+/*========= JAPANESE COMPATIBLE CUSTOMIZATION ==========*/
+.channel-members h2 {
+	padding: 5px 0px !important;
+	width: auto !important;
+}
+
+.chat > .content .messages .message-group .markup {
+  padding: 2px 0px;
+}
+/*========= DISABLING LOADING ANIMATIONS ==========*/
+#app-mount::after {
+	-webkit-animation: initial;
+	animation: initial;
+}
