@@ -9,22 +9,12 @@ IMPORTANT: CHANGE BETWEEN DARK AND LIGHT VERSION IN APPEARANCE SETTINGS!
 */
 /*============== CUSTOMIZABLE COLORS ===============*/
 /*
-backgrownd imager
-1:https://www.dropbox.com/s/efqxdfh5vtbzppv/yukari01_02.jpg?dl=1
-2:https://www.dropbox.com/s/g36mk9qsrkt6yr7/AIdrowedScenery01.png?dl=1
-3:https://www.dropbox.com/s/qvrmb8b40cizrws/IMG_2183.jpg?dl=1
-*/
-/*
 	--main-color: #e67a27;
 	--hover-color: #b35d1e;
 */
 :root {
     --background-blur: 0px;
     --background-brightness: 150%;
-	--url1: url(http://localhost/image/touhou/yukari01.jpg);
-	--url2: url(http://localhost:80/wallpaper/AIdrowedScenery01.png);
-	--url3: url(http://localhost:80/wallpaper/IMG_2183.jpg);
-    --background-image: var(--url1);
 }
 /*========= CUSTOMIZABLE BACKGROUND IMAGE ==========*/
 body::after,
